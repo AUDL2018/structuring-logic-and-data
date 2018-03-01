@@ -10,9 +10,9 @@ addition (5, 5)
 
 //Exercise
 
-function Drink (name, prize, ingredients) {
+function Drink (name, price, ingredients) {
   this.name = name
-  this.prize = prize
+  this.price = price
   this.ingredients = ingredients
 }
 
