@@ -49,11 +49,12 @@ console.log(dryMartini)*/
 
 //objects can have functions as well
 
-function newPerson (name, age) {
+/*function newPerson (name, age) {
   this.name = name;
   this.age = age;
   this.canIDrive = function() {
     if (this.age>=18) {
+      //you could also simply do : return this.age >=18
       return true
     }
     else {
@@ -62,4 +63,24 @@ function newPerson (name, age) {
   }
 }
 let henrik = new newPerson("Henrik", 24);
-console.log("can Henrik Drive?", henrik.canIDrive());
+console.log("can Henrik Drive?", henrik.canIDrive());*/
+
+
+
+//U can filter objects from an array
+
+function Drink (name, price, ingridients) {
+  this.name=name
+  this.price=price
+  this.ingridients=ingridients
+}
+
+
+let drinks = [
+  new Drink("dry martini", 50, ["gin", "white vermouth"]),
+  new Drink("drink1", 200, ["vodka", "milk"]),
+  new Drink("drink2", 300, ["Coconut", "wine"]),
+  new Drink("drink3", 150, ["soda", "rum"]),
+  new Drink("drink4", 400, ["flowers", "milk"])
+]
+console.log("filtering", drinks.filter(Drink => Drink.price<300))
