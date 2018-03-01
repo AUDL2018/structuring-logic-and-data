@@ -28,11 +28,29 @@ function Person (name, age) {
   this.age = age
 
   this.canIDriveInDK = function() {
-    age > 18
-
+    if (this.age >= 18) {
+      return true
+    }
+    else {
+      return false
+    }
+    //short version, could replace all the if/else:  return this.age >= 18
   }
 
 }
 
 let john = new Person ('John', 20)
-console.log(john.canIDriveInDK)
+console.log("Can the person drive? " + john.canIDriveInDK())
+
+
+//NEW - using the Drink object
+
+let meny = [
+  new Drink('Coke', 30, ['Coke', 'Lemon']),
+  new Drink('Spritzer', 40, ['White wine', 'Soda']),
+  new Drink('Long Island', 60, ['Cola', 'Rum', 'A lot more']),
+  new Drink('Vodka', 50, ['Vodka', 'Juice']),
+  new Drink('New something', 30, ['Sprite', 'Lemon']),
+]
+
+console.log('Something with the meny of drinks', meny.filter(drink => drink.price < 50))
