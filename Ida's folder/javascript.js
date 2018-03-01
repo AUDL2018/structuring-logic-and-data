@@ -41,5 +41,4 @@ drinks(
   new Drink(whisky sour, 80, lemon)
 )
 
-
-let myDrink = new Drink('Cosmo', '90', 'vodka')
+console.log('What would you like to drink? We have ' + drinks());
