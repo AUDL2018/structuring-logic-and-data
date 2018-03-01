@@ -68,7 +68,7 @@ console.log("can Henrik Drive?", henrik.canIDrive());*/
 
 
 //U can filter objects from an array
-
+/*
 function Drink (name, price, ingridients) {
   this.name=name
   this.price=price
@@ -83,4 +83,9 @@ let drinks = [
   new Drink("drink3", 150, ["soda", "rum"]),
   new Drink("drink4", 400, ["flowers", "milk"])
 ]
-console.log("filtering", drinks.filter(Drink => Drink.price<300))
+console.log("filtering", drinks.filter(Drink => Drink.price<300))*/
+/*if u wanted to change the currency to USD use the map function. like:
+drinks.map(=> {
+  do things with the objects, like adding more properties
+  return something;
+})*/
