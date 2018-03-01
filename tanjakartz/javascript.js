@@ -72,9 +72,8 @@ devider()
 function Drink(name, price, ingredients) {
   this.name = name
   this.price = price
-  this.ingredients = []
+  this.ingredients = ingredients
 }
 
 let myDrink = new Drink ('Mojito', 80, ['lime', 'ice', 'rum', 'mint', 'sparkling water'])
 console.log(myDrink)
-devider()
