@@ -1,4 +1,5 @@
 
+
 let a = 100
 
 function addition (a,b) {
@@ -13,7 +14,7 @@ function getHelloGreeting(name){
 
 let greeting = getHelloGreeting('Katarina')
 console.log('greeting',getHelloGreeting('Katarina'))
-divider()
+
 
 
 //about objects
@@ -38,7 +39,7 @@ PersonObject.favorites.food => ['cheese','bread']
 PersonObject.favorites.drink[1] => 'coffee'
 */
 console.log('PersonObject',PersonObject)
-divider()
+
 
 
 
@@ -56,30 +57,67 @@ let p {
 
 let myPerson = new Person ('Katarina Tokolyova', 'Aarhus', 28)
 console.log ('myPerson', myPerson)
-divider()
-
-
-console.log('DrinkObject',DrinkObject)
-divider()
 
 
 
-function Drink (name, price, ingredients){
+
+const Drinks = (name, price, ingredients) => {
+  return { name, price, ingregredients}
   this.name = name
   this.price = price
   this.ingredients = ingredients
 }
 
-let p = {
-  name: 'Gin Tonic',
-  price: '52',
-  ingredients:[
-    'gin',
-    'tonic',
-    'lime',
-  ]
-}
+let drinks = [
+new Drink ('Gin Tonic', 52, ['gin','tonic','lime'])
+new Drink ('Moscow Mule', 63, ['vodka','ginger beer', 'lime'])
+new Drink ('Irish Coffee', 49, ['whiskey','coffee','brown sugar','cream'])
+new Drink ('Mojito', 53, 'rum' ,'water', 'lime', 'mint')
+new Drink ('Coffee with Baileys', 49, 'baileys', 'coffee', 'cream')
+]
 
-let myDrink = new Drink ('Gin Tonic', 52, 'ingredient')
-console.log ('myDrink', myDrink)
-divider()
+console.log('drinks',drinks)
+console.log('Drinks under 50 (incl)',drinks.filter(drink=>drink.price <=50))
+
+
+
+
+//object with build in
+function newPerson(name,age) {
+  this.name = name
+  this.age = age
+  this.canIDrive = function() {
+    if (this.age>=18){
+      return true
+    }
+    else {
+      return false
+      }
+    }
+  }
+
+  let katarina = new newPerson ("Katarina", 22);
+  console.log ('Can Katarina drive?', katarina.canIDrive());
+
+
+/*Let's make parrot actually speak
+function Parrot(name){
+  this.name = name
+
+  this.say = function
+}
+*/
+
+
+let colors = ['Red','Green','Blue']
+
+let color = color[1]
+
+console.log('How many elements', color.length)
+
+
+
+
+const Gift = (description, type, price) => {
+  this.description
+}
