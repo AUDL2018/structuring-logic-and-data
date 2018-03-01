@@ -34,11 +34,11 @@ function Drink(name, price, ingredients){
 }
 
 let drinks(
-  new Drink(cosmo, 50, vodka),
-  new Drink(tequlia, 20, lemon),
-  new Drink(mojito, 90, lime),
-  new Drink(white russian, 70, milk),
-  new Drink(whisky sour, 80, lemon)
+  new Drink(cosmo, 50, [vodka, cointreau, lime, cranberry]),
+  new Drink(tequlia, 20, [tequila, lemon]),
+  new Drink(mojito, 90, [rum, mint, lime, syrup, soda]),
+  new Drink(white russian, 70, [vodka, khalua, milk]),
+  new Drink(whisky sour, 80, [whisky, syrup, lemon, eggwhite, agustura])
 )
 
 console.log('What would you like to drink? We have ', drinks());
