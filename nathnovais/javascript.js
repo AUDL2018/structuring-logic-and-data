@@ -71,14 +71,14 @@ console.log('My Drink:', myDrink);
 
 function Person(name, age) {
   this.name = name
-  this.age = argument
+  this.age = age
   this.canIDriveInDenmark = function() {
-    age = 15;
     if(age => 18) {
-      console.log('You are allowed to drive in Denmark');
-      else {
-        console.log('You are not allowed to drive in Denmark');
-      }
+      console.log('You are allowed to drive in Denmark')
+    }  else {
+        console.log('You are not allowed to drive in Denmark')
     }
-  }
 }
+}
+let myPerson = new Person('Nathalia', 31)
+console.log(Person.canIDriveInDenmark)
