@@ -54,12 +54,12 @@ function newPerson (name, age) {
   this.age = age;
   this.canIDrive = function() {
     if (this.age>=18) {
-      console.log("I can drive")
+      return true
     }
     else {
-      console.log("No, I am too young, sorry")
+      return false
     }
   }
 }
 let henrik = new newPerson("Henrik", 24);
-henrik.canIDrive();
+console.log("can Henrik Drive?", henrik.canIDrive());
