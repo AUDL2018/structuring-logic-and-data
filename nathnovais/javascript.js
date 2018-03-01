@@ -8,6 +8,10 @@ function addition (a, b) {
 addition(3, 5)
 addition(a, 5)
 
+function divider() {
+console.log('---------------------------')
+}
+
 function getHelloGreeting(name) {
   return 'Hello' + name
   return `Hello ${name}`
@@ -58,3 +62,23 @@ function Drink(name, price, ingredients) {
 
 let myDrink = new Drink('margarita', 85, ['tequila', 'lime', 'sugar'])
 console.log('My Drink:', myDrink);
+
+//Create a person object constructor, 2 parameters: name(string), age(integer) -> real values are arguments
+//(argument is the value and parameters is what defines the function)
+//One method: canIDriveInDenmark() => check if age is abot or equal 18
+//return true or false
+
+
+function Person(name, age) {
+  this.name = name
+  this.age = argument
+  this.canIDriveInDenmark = function() {
+    age = 15;
+    if(age => 18) {
+      console.log('You are allowed to drive in Denmark');
+      else {
+        console.log('You are not allowed to drive in Denmark');
+      }
+    }
+  }
+}
