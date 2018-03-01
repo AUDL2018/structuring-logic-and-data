@@ -29,7 +29,7 @@ console.log("test", person.favorites.books[1]);*/
 
 //Alternatively u can use constructor functions. If u want multiple objects of same kind for example
 //this references the object ure creating
-function Person(name, city, age) {
+/*function Person(name, city, age) {
   this.name=name
   this.city=city
   this.age=age
@@ -44,4 +44,22 @@ function Drink (name, price, ingridients) {
   this.ingridients=ingridients
 }
 let dryMartini = new drink("dry martini", "50kr", ["gin", "white vermouth", "garnish"]);
-console.log(dryMartini)
+console.log(dryMartini)*/
+
+
+//objects can have functions as well
+
+function newPerson (name, age) {
+  this.name = name;
+  this.age = age;
+  this.canIDrive = function() {
+    if (this.age>=18) {
+      console.log("I can drive")
+    }
+    else {
+      console.log("No, I am too young, sorry")
+    }
+  }
+}
+let henrik = new newPerson("Henrik", 24);
+henrik.canIDrive();
