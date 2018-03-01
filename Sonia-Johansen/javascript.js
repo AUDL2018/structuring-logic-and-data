@@ -59,12 +59,12 @@ const Drink = (name, price, engredients) => {
   return { name, price, engredients }
 }
 let drinks = [
-  Drink('Sunrise', 47, ['vodka', 'juice']),
-  Drink('Horse', 65, ['vodka', 'lemon', 'water']),
-  Drink('HotSpot', 36, ['rom', 'juice']),
-  Drink('Funny', 43, ['vodka', 'rom']),
-  Drink('NiceOne', 76, ['vodka', 'rom' 'juice'])
+  new Drink('Sunrise', 47, ['vodka', 'juice']),
+  new Drink('Horse', 65, ['vodka', 'lemon', 'water']),
+  new Drink('HotSpot', 36, ['rom', 'juice']),
+  new Drink('Funny', 43, ['vodka', 'rom']),
+  new Drink('NiceOne', 76, ['vodka', 'rom', 'juice'])
 ]
 console.log('Drinks below 50 kr.', drinks.filter(function (drink => drink.price = <50){
-  return drink.price == <50
+  
 }))
