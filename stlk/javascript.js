@@ -58,10 +58,38 @@ let emptyObject = {
 
 function Drink(name, cocktail) {
 	this.name = name;
-	this.cocktail = cocktail;
+b	this.cocktail = cocktail;
 }
 
 let Drink = {
 	name: "Scotch",
 	cocktail: false
 };
+
+
+
+function Parrot(name) {
+	this.name = name
+	// body...
+
+	this.sayHello = function (extra) {
+		// body...
+		console.log("Hello" + this.name)
+	}
+}
+
+
+function Person(name, tabula) {
+	this.name = name
+	this.age = age
+	// body...
+
+	this.canIDrivenInDenmark = function (tabula) {
+		if (this.age) {
+			return true
+		} else {
+			return false
+		}
+		// body...
+	}
+}
