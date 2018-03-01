@@ -26,14 +26,16 @@ console.log(sunrise)
 
 
 function Person(name, age) {
-  this.name = name
-  this.age = age
+  this.name = name;
+  this.age = age;
 
   this.canIDriveInDenmark = function () {
-    let Boolean = true;
-    if Boolean = >18
-    console.log('You can drive in Denmark ' + this.name)
+    if (this.age>=18) {
+    return true
+  }
+  else {
+    return false
   }
 }
-let sonia = new Person('Sonia', 24)
-sonia.canIDriveInDenmark()
+let sonia = new Person('Sonia', 24);
+console.log ('Can i drive?', sonia.canIDriveInDenmark());
