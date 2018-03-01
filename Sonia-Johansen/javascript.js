@@ -5,7 +5,7 @@ function addition (a, b) {
   console.log (a + b)
 }
 
-adition(5, 5)
+addition(5, 5)
 
 /* how to do objects (let emptyObject ={ name = Sonia city = Aarhus })
 let PersonObject = { name: city:}
@@ -14,11 +14,12 @@ This is called object litteral
 You can also do alot of proberties in the same object.
 Eksample:
 */
-function Drink (name, price, engredients) {
+
+function Drink (name, price, engredients){
 this.name = name
 this.price = price
 this.engredients = engredients
 }
-let sunrise = new Drink ("Sunrise", 47,) ["vodka"]
+let sunrise = new Drink('Sunrise', 47, ['vodka', 'Juice'])
 
 console.log(sunrise)
