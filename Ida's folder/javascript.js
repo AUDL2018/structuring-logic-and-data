@@ -33,7 +33,7 @@ function Drink(name, price, ingredients){
   this.ingredients = ingredients
 }
 
-drinks(
+let drinks(
   new Drink(cosmo, 50, vodka),
   new Drink(tequlia, 20, lemon),
   new Drink(mojito, 90, lime),
