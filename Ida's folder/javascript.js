@@ -1,16 +1,16 @@
 // Hello World!
 console.log('Idas Branch!')
 
-function Parrot(name){
-  this.name = name
+function Driver(name, age){
+  this.name = name,
+  this.age = age,
+  this.legal = function(){
 
-  this.sayHello = function(){
-
-    console.log('Hello, my name is' + this.name)
+    console.log('Hello, my name is ' + this.name + 'I am ' + this.age + 'years old!')
 
   }
 }
 
-let charlie = new Parrot('Charlie')
+let charlie = new Driver('Charlie', '17')
 
-charlie.sayHello()
+charlie.legal(age => 18)
