@@ -8,7 +8,7 @@ function Drink(name, price, ingredients) {
   this.ingredients = ingredients
 }
 
-let myDrink = newDrink(name, price, ingredients) {
+let myDrink (name, price, ingredients) {
   name: 'Cosmopolitan',
   price: '80',
 
