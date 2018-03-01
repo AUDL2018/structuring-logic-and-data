@@ -55,9 +55,6 @@ console.log('Gadget gifts full', gifts.filter(function (gift){
 }))
 
 //Exersise 4
-const Drink = (name, price, engredients) => {
-  return { name, price, engredients }
-}
 let drinks = [
   new Drink('Sunrise', 47, ['vodka', 'juice']),
   new Drink('Horse', 65, ['vodka', 'lemon', 'water']),
@@ -65,6 +62,4 @@ let drinks = [
   new Drink('Funny', 43, ['vodka', 'rom']),
   new Drink('NiceOne', 76, ['vodka', 'rom', 'juice'])
 ]
-console.log('Drinks below 50 kr.', drinks.filter(function (drink => drink.price = <50){
-  
-}))
+console.log('Drinks below 50 kr.', drinks.filter(drink => drink.price <50))
