@@ -1,27 +1,16 @@
 // Hello World!
-console.log('Hello World!')
+console.log('Idas Branch!')
 
+function Parrot(name){
+  this.name = name
 
-function Drink(name, price, ingredients) {
-  this.name = name,
-  this.price = price,
-  this.ingredients = ingredients
-}
+  this.sayHello = function(){
 
-let myDrink (name, price, ingredients) {
-  name: 'Cosmopolitan',
-  price: '80',
+    console.log('Hello, my name is' + this.name)
 
-  let ingredients: {
-    alcohol: [
-      'vodka',
-      'cointreau'
-    ],
-    juice:[
-      'cranberry juice',
-      'lime juice'
-    ]
   }
 }
 
-console.log(myDrink);
+let charlie = new Parrot('Charlie')
+
+charlie.sayHello()
