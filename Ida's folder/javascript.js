@@ -41,6 +41,6 @@ drinks(
   new Drink(whisky sour, 80, lemon)
 )
 
-console.log('What would you like to drink? We have ' + drinks());
+console.log('What would you like to drink? We have ', drinks());
 
-console.log('If you are poor, I recoomend ' + drinks.filter(drink => drink.price < 50));
+console.log('If you are poor, I recommend ', drinks.filter(drink => drink.price < 50));
