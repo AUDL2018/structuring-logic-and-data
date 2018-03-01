@@ -1,7 +1,14 @@
 // Hello World!
 console.log('Hello World!')
 
-let DrinkObject {
+
+function Drink(name, price, ingredients) {
+  this.name = name,
+  this.price = price,
+  this.ingredients = ingredients
+}
+
+let myDrink = newDrink(name, price, ingredients) {
   name: 'Cosmopolitan',
   price: '80',
 
@@ -17,4 +24,4 @@ let DrinkObject {
   }
 }
 
-console.log(DrinkObject);
+console.log(Drink);
