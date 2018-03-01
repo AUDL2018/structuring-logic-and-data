@@ -73,8 +73,19 @@ let drinks = [
   new Drink ('long island ice tea', 70, ['vodka', 'coca cola', 'rum']),
   new Drink ('Strawberry Daquiri', 50, ['vodka', 'strawberry juice'])
 ]
-console.log('Drinks under 50kr', drinks.filter(Drink => Drink.price <= 50))
+//console.log('Drinks under 50kr', drinks.filter(Drink => Drink.price <= 50))
+console.log('Some of the drinks', drinks.filter(function (currentDrink) {
+  return (currentDrink.price <60 && currentDrink.price >=30)
+}
 
+//not working
+Drinks.map(drink) => {
+  if(drink.price > 50) {
+    return 'expensive'
+  } else {
+    return 'cheap'
+  }
+}
 
 
 //Create a person object constructor, 2 parameters: name(string), age(integer) -> real values are arguments
