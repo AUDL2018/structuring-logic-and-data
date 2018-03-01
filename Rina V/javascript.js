@@ -94,4 +94,4 @@ let Rina = new Person("Rina", 24)
   new  Drink('Noisytimes', 131, ['pinapple juice', 'purple soda', 'vodka']),
   new  Drink('NonSobertimes', 55, ['mango juice', 'pink soda', 'whisky']),
 ]
-  console.log('Drinks above 50 kr', drinks.filter(drink => drink.price > 50))
+  console.log('Drinks above 50 kr', drinks.filter(drink => drink.price > 30 && drink.price <60))
