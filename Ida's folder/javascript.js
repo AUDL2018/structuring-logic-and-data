@@ -24,4 +24,4 @@ let myDrink = newDrink(name, price, ingredients) {
   }
 }
 
-console.log(Drink);
+console.log(myDrink);
